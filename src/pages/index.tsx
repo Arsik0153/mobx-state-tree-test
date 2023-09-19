@@ -16,7 +16,7 @@ const Home = observer((props) => {
 
   return (
     <>
-      <Grid container spacing={4} className={styles.gridContainer}>
+      <Grid container spacing={4} style={{ maxWidth: 600, margin: '0 auto !important' }}>
         <Grid item xs={12}>
           <Typography variant="h4" align="center">Simple testing app</Typography>
         </Grid>
