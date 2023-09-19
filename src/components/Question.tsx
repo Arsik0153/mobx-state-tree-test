@@ -6,6 +6,7 @@ import { Instance } from 'mobx-state-tree';
 import FileUploadZone from './FileUploadZone';
 import { useStore } from '@/models/RootStore';
 import { observer } from 'mobx-react-lite';
+import WebcamRecorder from './WebcamModal';
 
 type Props = {
   question: Question;
@@ -78,7 +79,7 @@ const QuestionView: React.FC<Props> = observer((props) => {
         <Card sx={{ width: '100%' }} variant="outlined">
           <CardContent>
             <Typography variant="h6" gutterBottom>{count}. {question.title}</Typography>
-            <Typography variant="caption" gutterBottom>Video answers are not supported yet</Typography>
+            <WebcamRecorder />
           </CardContent>
         </Card>
       </Grid>
